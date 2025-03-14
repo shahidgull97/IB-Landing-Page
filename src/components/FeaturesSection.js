@@ -145,7 +145,7 @@ export default function FeaturesSection() {
       title: "Complex Concepts Simplified",
       description:
         "Our expert educators break down challenging IB topics into clear, digestible explanations with real-world examples.",
-      image: "/images/Text Solution.jpeg",
+      image: "/images/confusion.jpg",
     },
     {
       icon: (
@@ -233,7 +233,7 @@ export default function FeaturesSection() {
       title: "Continually Updated",
       description:
         "Our content is regularly reviewed and updated to reflect the latest IB curriculum changes and examination trends.",
-      image: "/images/Text Solution.jpeg",
+      image: "/images/updated.jpg",
     },
     {
       icon: (
@@ -255,7 +255,7 @@ export default function FeaturesSection() {
       title: "Interactive Q&A",
       description:
         "Submit your questions directly to our team of educators and receive personalized explanations to your specific challenges.",
-      image: "/images/Text Solution.jpeg",
+      image: "/images/qna.png",
     },
   ];
 

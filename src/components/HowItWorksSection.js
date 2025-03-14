@@ -4,22 +4,6 @@ import { gsap } from "gsap";
 import StepCard from "./StepCard";
 
 export default function HowItWorksSection() {
-  // const howItWorksRef = useRef(null);
-
-  // useEffect(() => {
-  //   if (howItWorksRef.current) {
-  //     gsap.from(howItWorksRef.current.querySelectorAll(".step-card"), {
-  //       x: -50,
-  //       opacity: 0,
-  //       stagger: 0.2,
-  //       duration: 0.8,
-  //       scrollTrigger: {
-  //         trigger: howItWorksRef.current,
-  //         start: "top 70%",
-  //       },
-  //     });
-  //   }
-  // }, []);
   const howItWorksRef = useRef(null);
   const stepsRef = useRef([]);
 
@@ -111,40 +95,5 @@ export default function HowItWorksSection() {
         </div>
       </div>
     </section>
-
-    // <section
-    //   ref={howItWorksRef}
-    //   className="py-20 bg-blue-50 px-4 sm:px-6 lg:px-8"
-    // >
-    //   <div className="container mx-auto max-w-7xl">
-    //     <div className="text-center mb-16">
-    //       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-    //         How Nailib Videos Work
-    //       </h2>
-    //       <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-    //         Getting started is simple. Follow these steps to begin your enhanced
-    //         IB learning journey
-    //       </p>
-    //     </div>
-
-    //     <div className="flex overflow-x-auto overflow-y-hidden whitespace-nowrap scroll-smooth gap-5 no-scrollbar w-full">
-    //       {steps.map((step, index) => (
-    //         <StepCard
-    //           key={index}
-    //           number={step.number}
-    //           title={step.title}
-    //           description={step.description}
-    //         />
-    //       ))}
-    //     </div>
-
-    //     <div className="mt-16 text-center">
-    //       <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-    //         Need help getting started? Our support team is available 24/7 to
-    //         assist you with any questions.
-    //       </p>
-    //     </div>
-    //   </div>
-    // </section>
   );
 }
