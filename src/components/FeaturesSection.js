@@ -1,11 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import FeatureCard from "./FeatureCard";
-import dynamic from "next/dynamic";
+
 import SplitType from "split-type";
-// Import SplitType dynamically to prevent SSR issues
-// const SplitType = dynamic(() => import("split-type"), { ssr: false });
+
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default function FeaturesSection() {
@@ -94,35 +92,6 @@ export default function FeaturesSection() {
       );
     });
   }, []);
-
-  // useEffect(() => {
-  //   if (!featuresRef.current) return;
-
-  //   setTimeout(() => {
-  //     const cards = featuresRef.current.querySelectorAll(".feature-card");
-
-  //     console.log("Feature cards found:", cards);
-
-  //     gsap.from(cards, {
-  //       y: 100,
-  //       opacity: 0,
-  //       stagger: 0.3,
-  //       duration: 1,
-  //       ease: "power3.out",
-  //       scrollTrigger: {
-  //         trigger: featuresRef.current,
-  //         start: "top 90%",
-  //         end: "bottom 50%",
-  //         scrub: 1, // Smooth animation while scrolling
-  //         toggleActions: "play none none none",
-  //         // markers: true, // Debugging markers
-  //       },
-  //     });
-
-  //     // Ensure ScrollTrigger updates
-  //     ScrollTrigger.refresh();
-  //   }, 100);
-  // }, []);
 
   const features = [
     {

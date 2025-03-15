@@ -5,7 +5,6 @@ export default function StepCard({ number, title, description }) {
       <div className="absolute -top-5 -left-5 w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold">
         {number}
       </div>
-      {/* <img src="/images/Erit Briggs.jpg" alt="Erit Briggs" /> */}
 
       <h3 className="text-xl font-semibold text-blue-900 mt-4 mb-3">{title}</h3>
       <p className="text-gray-950">{description}</p>
